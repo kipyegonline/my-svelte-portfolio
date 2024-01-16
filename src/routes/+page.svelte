@@ -1,18 +1,61 @@
 <script lang="ts">
+  import { Tabs, Divider } from "@svelteuidev/core";
+  import MainCard from "../components/card/card.svelte";
   import Counter from "./Counter.svelte";
   import welcome from "$lib/images/svelte-welcome.webp";
   import welcome_fallback from "$lib/images/svelte-welcome.png";
   // import Icon from "@iconify/svelte";
   //<Icon icon="mdi-light:home" />
+  import { portfolio } from "../store/store";
+  let currentYear = new Date().getFullYear();
+  let years = [...Array(currentYear - 2018)].map((y, i) => i);
+  let active = 0;
+  const handleTabChange = (e: any) => {
+    console.log(e);
+    const {
+      detail: { index },
+    } = e;
+    active = index;
+  };
+  $: cyear = currentYear - active;
+  $: projects =
+    cyear === 2018
+      ? $portfolio
+      : $portfolio.filter((port) => port.year === cyear);
 </script>
 
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Home| Resume Vince {new Date().getFullYear()}</title>
+  <meta name="description" content="Resume for Vincent Kipyegon Koech" />
 </svelte:head>
 
-<section>
-  <h1>The Paras</h1>
+<section class="border-red-400 border">
+  <h1>The Paras {$portfolio.length}</h1>
+  <Tabs
+    bind:active
+    on:change={handleTabChange}
+    grow
+    position="apart"
+    class="border border-red-400 w-full py-2"
+    variant="pills"
+  >
+    {#each years as year}
+      <Tabs.Tab label={currentYear - year}>
+        <MainCard {projects} />
+      </Tabs.Tab>
+    {/each}
+    <Tabs.Tab label={"all"}>
+      {#if active === 6}
+        <MainCard {projects} />
+      {/if}</Tabs.Tab
+    >
+  </Tabs>
+  Active year is {cyear}
+  active items are {cyear === 2018
+    ? $portfolio.length
+    : $portfolio.filter((port) => port.year === cyear).length}
+  active projects are {projects.length}
+  <Divider />
 </section>
 
 <style>
