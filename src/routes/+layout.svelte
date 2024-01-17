@@ -23,8 +23,9 @@
   >
     <CustomHeader />
   </Navbar>
+  <div class="block sm:hidden"><CustomHeader /></div>
 
-  <main>
+  <main class="">
     <SvelteUIProvider withNormalizeCSS withGlobalStyles
       ><slot /></SvelteUIProvider
     >

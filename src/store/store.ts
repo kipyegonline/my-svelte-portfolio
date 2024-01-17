@@ -100,7 +100,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     year: 2023,
     repo: null,
     link: "",
-    openSource: false,
+    openSource: !false,
   },
   {
     id: 7,

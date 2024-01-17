@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Tabs, Divider } from "@svelteuidev/core";
+  import { Tabs, Divider, Chip } from "@svelteuidev/core";
   import MainCard from "../components/card/card.svelte";
   import Counter from "./Counter.svelte";
   import welcome from "$lib/images/svelte-welcome.webp";
@@ -7,8 +7,13 @@
   // import Icon from "@iconify/svelte";
   //<Icon icon="mdi-light:home" />
   import { portfolio } from "../store/store";
+  import Timeline from "../components/Timeline/Timeline.svelte";
   let currentYear = new Date().getFullYear();
   let years = [...Array(currentYear - 2018)].map((y, i) => i);
+  let frameworks = ["react", "svelte", "angular", "laravel"].map((item) => ({
+    label: item,
+    value: item,
+  }));
   let active = 0;
   const handleTabChange = (e: any) => {
     console.log(e);
@@ -22,6 +27,7 @@
     cyear === 2018
       ? $portfolio
       : $portfolio.filter((port) => port.year === cyear);
+  let checked = frameworks[0];
 </script>
 
 <svelte:head>
@@ -30,7 +36,7 @@
 </svelte:head>
 
 <section class="border-red-400 border">
-  <h1>The Paras {$portfolio.length}</h1>
+  <h1>My Portfolio</h1>
   <Tabs
     bind:active
     on:change={handleTabChange}
@@ -41,16 +47,31 @@
   >
     {#each years as year}
       <Tabs.Tab label={currentYear - year}>
-        <MainCard {projects} />
+        <div class="flex gap-4 justify-center">
+          {#each frameworks as frame}
+            <Chip
+              variant="filled"
+              checked={checked === frame}
+              on:on:click={() => (checked = frame)}>{frame.value}</Chip
+            >
+          {/each}
+          {checked}
+        </div>
+
+        <MainCard {projects} currentItem={cyear} />
       </Tabs.Tab>
     {/each}
-    <Tabs.Tab label={"all"}>
+
+    <Tabs.Tab label={"All"}>
       {#if active === 6}
-        <MainCard {projects} />
+        <section class="relative">
+          <Timeline {years} {active} />
+          <MainCard {projects} currentItem={cyear} />
+        </section>
       {/if}</Tabs.Tab
     >
   </Tabs>
-  Active year is {cyear}
+  Active year is {cyear} and {active}
   active items are {cyear === 2018
     ? $portfolio.length
     : $portfolio.filter((port) => port.year === cyear).length}
