@@ -5,6 +5,7 @@
   import github from "$lib/images/github-icon.svg";
   import twitter from "$lib/images/x-social-media-black-icon.svg";
   import linkedin from "$lib/images/linkedin-square-icon.svg";
+  import Framework from "../components/frameworks/framework.svelte";
 
   let socials = [
     { link: "https://github.com/kipyegonline", icon: github },
@@ -34,6 +35,7 @@
     {/each}
   </div>
   <Divider />
+
   <div></div>
 </header>
 

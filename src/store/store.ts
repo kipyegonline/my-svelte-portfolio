@@ -245,11 +245,13 @@ The app can also compare upto 2 images and return the comparison in text format.
     name: "Membership database react  application ",
     languages: ["javascript"],
     frameworks: [
-      "React js",
-      "react redux",
+      "React ",
+      "react",
+      "redux",
       "Fetch api",
       "Jquery ajax",
-      "PHP & MySQL",
+      "PHP",
+      "mysql",
     ],
     short_des:
       "An AJAX driven  utility web application for performing  CRUD of over 2000 members of professional body in Kenya  ",
