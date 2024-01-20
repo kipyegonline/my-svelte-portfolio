@@ -22,7 +22,20 @@
   <div class="p-4 text-xl font-medium flex flex-col items-center">
     <p>Vincent Kipyegon</p>
     <p class="italic text-base">Software developer</p>
-    <p class="italic text-base">Freelance Journalist</p>
+    <p class="italic text-base py-2">
+      Technical writer at <a
+        class="text-blue-800 hover:text-blue-800"
+        href="https://dev.to/kipyegonline"
+        target="_blank">Dev.to</a
+      >
+    </p>
+    <p class="italic text-base py-2">
+      Email: <a
+        class="text-blue-800 hover:text-blue-800 inline-block"
+        href="mailto:vince.kipyegon11@gmail.com"
+        target="_blank">vince.kipyegon11@gmail.com</a
+      >
+    </p>
   </div>
   <Divider />
   <div class="p-2 flex gap-4 justify-evenly">
@@ -36,7 +49,9 @@
   </div>
   <Divider />
 
-  <div></div>
+  <div>
+    <p class="italic text-base">Freelance Journalist.</p>
+  </div>
 </header>
 
 <style>

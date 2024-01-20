@@ -11,40 +11,40 @@
   import Timeline from "../components/Timeline/Timeline.svelte";
   import Framework from "../components/frameworks/framework.svelte";
   let currentYear = new Date().getFullYear();
-  let years = [...Array(currentYear - 2018)].map((y, i) => i);
+  let defaultYear = 2018;
+  let years = [...Array(currentYear - defaultYear)].map((y, i) => i);
   let frameworks = ["react", "svelte", "angular", "laravel"].map((item) => ({
     label: item,
     value: item,
   }));
-  let active = 0;
+  let active = -1;
+
   let logoClicked = false,
     clickedStack = "";
-
-  const handleTabChange = (e: any) => {
-    console.log(e);
-    if (logoClicked) {
-      logoClicked = false;
-      clickedStack = "";
-    }
-    const {
-      detail: { index },
-    } = e;
-    active = index;
-  };
   $: cyear = currentYear - active;
   $: projects =
-    cyear === 2018
+    active === -1
       ? $portfolio
-      : $portfolio.filter((port) => port.year === cyear);
+      : $portfolio.filter((port) => port.year === active);
   let checked = frameworks[0];
+
+  const handleTabChange = (e: any) => {
+    clickedStack = "";
+    console.log(e.detail);
+    const {
+      detail: { index, key },
+    } = e;
+    active = +key;
+  };
 
   const hanldeLogoClick = (text: string) => {
     clickedStack = text;
-    if (logoClicked) {
+    if (active === -1) {
       projects = $portfolio;
     } else {
-      logoClicked = true;
+      projects = $portfolio.filter((pro) => pro.year === active);
     }
+
     let selected = projects.filter((project) => {
       let pr = project.frameworks.map((pro) => pro.toLowerCase());
       return pr.includes(text);
@@ -66,15 +66,45 @@
   <!-- <Table />  <Grid />-->
 
   <Tabs
-    bind:active
     on:change={handleTabChange}
     grow
     position="apart"
     class="border border-red-400 w-full py-2"
     variant="pills"
+    color="red"
   >
-    {#each years as year}
-      <Tabs.Tab label={currentYear - year}>
+    <!--All the projects-->
+
+    <Tabs.Tab label={"All"} tabKey="-1">
+      {#if active === -1}
+        <section class="relative">
+          <Framework onClick={hanldeLogoClick} />
+          {#if clickedStack}
+            <div class="py-2 text-2xl">
+              <h3>
+                {projects.length} <span class="capitalize">{clickedStack}</span>
+                projects.
+              </h3>
+            </div>
+          {/if}
+          {#if projects.length > 0}
+            <MainCard {projects} currentItem={cyear} />
+          {:else}
+            <div class="py-4 md:py-10">
+              <p>
+                There are no projects <span class="capitalize"
+                  >{clickedStack}</span
+                >
+              </p>
+            </div>
+          {/if}
+        </section>
+      {/if}</Tabs.Tab
+    >
+
+    <!---the rest of the year-->
+    {#each years as year, i}
+      <Tabs.Tab label={currentYear - year} tabKey={currentYear - year + ""}>
         <div class="fle gap-4 justify-center hidden">
           {#each frameworks as frame}
             <Chip
@@ -87,11 +117,13 @@
         </div>
         <section>
           <Framework onClick={hanldeLogoClick} />
-          {#if clickedStack}
+          {#if clickedStack && projects.length > 0}
             <div class="py-2 text-2xl">
               <h3>
-                {projects.length} projects in
+                {projects.length}
+                {projects.length === 1 ? "project" : "projects"} in
                 <span class="capitalize">{clickedStack}</span>
+                - {active}
               </h3>
             </div>
           {/if}
@@ -99,7 +131,7 @@
           {#if projects.length > 0}
             <MainCard {projects} currentItem={cyear} />
           {:else}
-            <div class="p-4 text-2xl">
+            <div class="px-4 py-4 md:py-10 text-2xl">
               <p>
                 There are no projects in <span class="capitalize"
                   >{clickedStack}</span
@@ -110,40 +142,7 @@
         </section>
       </Tabs.Tab>
     {/each}
-
-    <Tabs.Tab label={"All"}>
-      {#if active === 6}
-        <section class="relative">
-          <Framework onClick={hanldeLogoClick} />
-          {#if clickedStack}
-            <div class="py-2">
-              <h3>
-                {projects.length} projects in
-                <span class="capitalize">{clickedStack}</span>
-              </h3>
-            </div>
-          {/if}
-          {#if projects.length > 0}
-            <MainCard {projects} currentItem={cyear} />
-          {:else}
-            <div class="p-4">
-              <p>
-                There are no projects <span class="capitalize"
-                  >{clickedStack}</span
-                >
-              </p>
-            </div>
-          {/if}
-        </section>
-      {/if}</Tabs.Tab
-    >
   </Tabs>
-  Active year is {cyear} and {active}
-  active items are {cyear === 2018
-    ? $portfolio.length
-    : $portfolio.filter((port) => port.year === cyear).length}
-  active projects are {projects.length}
-  <Divider />
 </section>
 
 <style>

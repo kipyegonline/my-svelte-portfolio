@@ -24,7 +24,9 @@
   export let onClick = (text: string) => {};
 </script>
 
-<section class="flex gap-4 justify-start md:justify-center items-center">
+<section
+  class="flex flex-wrap gap-4 justify-start md:justify-center items-center"
+>
   {#each logos as [logo, text]}
     <div>
       <Image
@@ -37,3 +39,4 @@
     </div>
   {/each}
 </section>
+<hr />

@@ -17,7 +17,7 @@ const projects: Array<Project> = [
     id: 1,
     name: "Image Reader Artificial Intelligence app",
     languages: ["Typescript"],
-    frameworks: ["React", "Tailwindcss", "AI"],
+    frameworks: ["React", "typescript", "Tailwind", "AI"],
     short_des:
       "A generative AI image to text app that reads and interprets  images using Google Gemini AI",
     long_des: `An Artificial Intelligence web app powered by Google Gemini API to read and interpret images to text using multi modal models.
@@ -32,7 +32,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 2,
     name: "Civisec web app ",
     languages: ["Typescript"],
-    frameworks: ["React", "next js", "Tailwindcss"],
+    frameworks: ["React", "typescript", "next js", "Tailwind"],
     short_des:
       "An interactive cyber security tool designed to help measure and surface vulnerabilities in cybersecurity approach.",
 
@@ -46,7 +46,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 3,
     name: "Umzima app ",
     languages: ["Typescript"],
-    frameworks: ["React", "next js", "headless ui"],
+    frameworks: ["React", "typescript", "next js", "headless ui"],
     short_des:
       "A landing page for Umzima mobile app, a health recording and hospital appointment app.",
 
@@ -63,6 +63,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     frameworks: [
       "Redwod js",
       "Ant design",
+      "typescript",
       "GraphQL",
       "AWS cognito & DynamoDB",
     ],
@@ -79,7 +80,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 5,
     name: "Freeshow Worship",
     languages: ["Typescript"],
-    frameworks: ["Svelte"],
+    frameworks: ["Svelte", "typescript"],
     short_des:
       "An open source software for presenting show and sermons in church",
 
@@ -93,7 +94,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 6,
     name: "Open MRS ",
     languages: ["Typescript"],
-    frameworks: ["React", "Carbon UI"],
+    frameworks: ["React", "Carbon UI", "typescript"],
     short_des: "An  open Medical Records System for hospitals and clinics",
 
     long_des: `The open MRS is a monorepo with 6 modules for patient management; registering patients, booking appointments,patient search,active visits,outpatient and patients list. I contributed and customized the patient registration module. `,
@@ -106,7 +107,14 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 7,
     name: "Finwit App ",
     languages: ["Typescript"],
-    frameworks: ["React", "Next js", "Tailwind css", "Material UI", "Laravel"],
+    frameworks: [
+      "React",
+      "Next js",
+      "typescript",
+      "Tailwind css",
+      "Material UI",
+      "Laravel",
+    ],
     short_des:
       "A financial listing web application listing financial institutions in Kenya and their products and services",
 
@@ -120,7 +128,13 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 8.5,
     name: "Mentor Sacco web app",
     languages: ["javascript"],
-    frameworks: ["create-react-app", "bootstrap", "redux"],
+    frameworks: [
+      "create-react-app",
+      "react",
+      "bootstrap",
+      "typescript",
+      "redux",
+    ],
     short_des:
       "A web application for Mentor Sacco Society Limited based in Muranga Kenya",
 
@@ -134,7 +148,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 8,
     name: "Elections Tracking app",
     languages: ["Typescript"],
-    frameworks: ["Next js", "Material UI", "Tailwind css"],
+    frameworks: ["Next js", "Material UI", "typescript", "Tailwind", "react"],
     short_des:
       "I created this app to visualize the 2022 General Elections in Kenya",
 
@@ -148,7 +162,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 9,
     name: "Farmer Record Keeping App",
     languages: ["javascript"],
-    frameworks: ["Next js", "Typescript", "Material UI"],
+    frameworks: ["Next js", "Typescript", "react", "Material UI"],
     short_des:
       "I created this app to help farmers keep track of inputs and output their short term crops in the farm from planting to harvesting period",
 
@@ -162,7 +176,15 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 10,
     name: "Blood pressure tracking app",
     languages: ["javascript"],
-    frameworks: ["React js", "react", "redux", "D3 js", "redux", "Laravel"],
+    frameworks: [
+      "React",
+      "react",
+      "redux",
+      "D3 js",
+      "redux",
+      "Laravel",
+      "javascript",
+    ],
     short_des: "A blood pressure record keeping app",
 
     long_des: `An interactive visualization web app where BP patients can add their daily BP readings , sent to database and the doctor can interpret the readings  on interactive charts.`,
@@ -175,7 +197,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 11,
     name: "Corona Virus tracking App ",
     languages: ["javascript"],
-    frameworks: ["React js", "react", "redux", "D3 js", "redux", "Laravel"],
+    frameworks: ["react", "redux", "D3 js", "redux", "Laravel", "javascript"],
     short_des:
       "An interactive data visualization  react app for tracking the corona virus cases  in Kenya, Africa and globally. ",
 
@@ -189,7 +211,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     id: 12,
     name: "Eastern College Website development  ",
     languages: ["javascript"],
-    frameworks: ["React", "javascript", "Material UI", "Gatsby"],
+    frameworks: ["React", "javascript", "Material UI", "Gatsby", "javascript"],
     short_des:
       "A gatsby js website redesign and portal management for Eastern College, Somalia.  ",
 
@@ -251,6 +273,7 @@ The app can also compare upto 2 images and return the comparison in text format.
       "Fetch api",
       "Jquery ajax",
       "PHP",
+      "javascript",
       "mysql",
     ],
     short_des:
@@ -267,11 +290,13 @@ The app can also compare upto 2 images and return the comparison in text format.
     name: "Deforestation app ",
     languages: ["javascript"],
     frameworks: [
-      "React js",
+      "React",
       "react redux",
       "Fetch api",
       "Jquery ajax",
-      "PHP & MySQL",
+      "PHP",
+      "MySQL",
+      "javascript",
     ],
     short_des: "An interactive map app showing deforestation in Kenya ",
 
