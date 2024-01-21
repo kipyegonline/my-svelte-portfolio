@@ -1,9 +1,7 @@
 <script lang="ts">
   import { Tabs, Divider, Chip } from "@svelteuidev/core";
   import MainCard from "../components/card/card.svelte";
-  import Counter from "./Counter.svelte";
-  import welcome from "$lib/images/svelte-welcome.webp";
-  import welcome_fallback from "$lib/images/svelte-welcome.png";
+
   // import Icon from "@iconify/svelte";
   //<Icon icon="mdi-light:home" />
   import { Table, Grid } from "radix-icons-svelte";

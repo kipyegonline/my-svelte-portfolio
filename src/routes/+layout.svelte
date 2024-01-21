@@ -31,7 +31,7 @@
     >
   </main>
 </AppShell>
-<footer>
+<footer class="p-4">
   All Rights Reserved &copy; {new Date().getFullYear()}
 </footer>
 
