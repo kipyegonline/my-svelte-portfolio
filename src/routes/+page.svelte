@@ -60,7 +60,17 @@
 </svelte:head>
 
 <section class="border-green-400 border w-full">
-  <h1>My Portfolio</h1>
+  <div class="py-2 mb-2">
+    <h1>My Portfolio</h1>
+    <p class="py-1">
+      A passionate and flexible software developer building seamless and
+      scalable web applications for <b>Production</b>.
+    </p>
+    <p class="py-0">
+      I am proficient in Typescript, Javascript,HTML/CSS, node.js, PHP and
+      MySQL.
+    </p>
+  </div>
   <!-- <Table />  <Grid />-->
 
   <Tabs

@@ -21,15 +21,17 @@
   </div>
   <div class="p-4 text-xl font-medium flex flex-col items-center">
     <p>Vincent Kipyegon</p>
-    <p class="italic text-base">Software developer</p>
-    <p class="italic text-base py-2">
+    <p class="italic text-base pb-2">
+      Frontend developer based in Nairobi,Kenya.
+    </p>
+    <p class="italic text-base py-0">
       Technical writer at <a
         class="text-blue-800 hover:text-blue-800"
         href="https://dev.to/kipyegonline"
         target="_blank">Dev.to</a
       >
     </p>
-    <p class="italic text-base py-2">
+    <p class="italic text-base py-0">
       Email: <a
         class="text-blue-800 hover:text-blue-800 inline-block"
         href="mailto:vince.kipyegon11@gmail.com"
@@ -38,6 +40,21 @@
     </p>
   </div>
   <Divider />
+
+  <div class="mb-2">
+    <p class="text-center font-bold text-underline">Skills</p>
+    <div class="p-4">
+      <code>Javascript/Typescript, HTML, CSS</code>
+      <code> React,Angular,Svelte </code>
+    </div>
+    <hr class="mb-2" />
+    <p class="text-center font-bold text-underline">Other Skills</p>
+    <div class="p-4">
+      <code> Public relations</code>
+      <code> Freelance journalism</code>
+      <code> Photography</code>
+    </div>
+  </div>
   <div class="p-2 flex gap-4 justify-evenly">
     {#each socials as social (social.link)}
       <div>
@@ -48,10 +65,6 @@
     {/each}
   </div>
   <Divider />
-
-  <div>
-    <p class="italic text-base">Freelance Journalist.</p>
-  </div>
 </header>
 
 <style>
