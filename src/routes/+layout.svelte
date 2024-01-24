@@ -11,19 +11,27 @@
 
   import CustomHeader from "./Header.svelte";
   import "./styles.css";
+  let isMobile = matchMedia("(min-width:481px").matches;
 </script>
 
 <AppShell>
   <Navbar
     hidden={!false}
-    width={{ lg: 300, base: 100 }}
-    fixed
-    class="p-4"
+    width={{ lg: 300, base: "100%" }}
+    fixed={isMobile}
+    class=" p-0 sm:p-4 mx-auto"
     position={{ top: 0, left: 0 }}
   >
     <CustomHeader />
   </Navbar>
-  <div class="block sm:hidden"><CustomHeader /></div>
+  <div class="block sm:hidden w-full mx-auto">
+    <h1
+      class="bg-blue-600 text-white rounded-md mb-0 md:mb-2 text-xl py-4 w-full"
+    >
+      Vincent Kipyegon Koech
+    </h1>
+    <CustomHeader />
+  </div>
 
   <main class="">
     <SvelteUIProvider withNormalizeCSS withGlobalStyles
@@ -31,7 +39,7 @@
     >
   </main>
 </AppShell>
-<footer class="p-4">
+<footer class="p-4 text-xl">
   All Rights Reserved &copy; {new Date().getFullYear()}
 </footer>
 
@@ -47,10 +55,10 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: 100%;
+    max-width: 100%;
     /*max-width: 64rem;
      max-width: 100%;*/
-
+    border: 1px solid magenta;
     margin: 0 auto;
     box-sizing: border-box;
   }

@@ -16,6 +16,17 @@
     value: item,
   }));
   let active = -1;
+  let skills = [
+    " HTML5, CSS3, JavaScript (ES6+), Typescript",
+    " React, Angular, Svelte",
+    " PHP/MYSQL/Laravel",
+    " Tailwind CSS,Material UI, Ant design",
+    " Responsive/mobile web design",
+    " Cross-browser compatibility",
+    " Accessible web design",
+    " Git, GitHub, CI/CD tools",
+    " AWS ",
+  ];
 
   let logoClicked = false,
     clickedStack = "";
@@ -59,19 +70,29 @@
   />
 </svelte:head>
 
-<section class="border-green-400 border w-full">
+<section class="border-green-400 border w-full dark:text-white">
   <div class="py-2 mb-2">
-    <h1>My Portfolio</h1>
-    <p class="py-1">
-      A passionate and flexible software developer building seamless and
-      scalable web applications for <b>Production</b>.
+    <h1 class=" hidden sm:block bg-blue-600 text-white rounded-md mb-2">
+      Vincent Kipyegon Koech
+    </h1>
+    <p class="py-4 px-2 text-justify">
+      I am a Frontend web developer with 5 years of experience designing,
+      developing, and maintaining responsive websites and web applications for
+      production. Skilled in HTML, CSS, JavaScript, TypeScript, React, Angular,
+      and Svelte js. I am also proficient in Node.js. I am passionate about
+      perfomant and user-friendly interface design.
     </p>
-    <p class="py-0">
-      I am proficient in Typescript, Javascript,HTML/CSS, node.js, PHP and
-      MySQL.
-    </p>
+    <div class="py-2 px-4 md:px-2 flex flex-col items-center justify-center">
+      <h3 class="text-lg font-bold">Skills assessment</h3>
+      <ul>
+        {#each skills as skill, i}
+          <li class="list-disc">{skill}</li>
+        {/each}
+      </ul>
+    </div>
   </div>
   <!-- <Table />  <Grid />-->
+  <h3 class="text-xl font-bold">Portfolio</h3>
 
   <Tabs
     on:change={handleTabChange}

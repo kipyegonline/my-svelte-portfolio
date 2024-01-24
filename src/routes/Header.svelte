@@ -20,7 +20,7 @@
     <Image src="at_vince.png" class="w-full h-auto" alt="my pic" />
   </div>
   <div class="p-4 text-xl font-medium flex flex-col items-center">
-    <p>Vincent Kipyegon</p>
+    <p class="hidden">Vincent Kipyegon</p>
     <p class="italic text-base pb-2">
       Frontend developer based in Nairobi,Kenya.
     </p>
