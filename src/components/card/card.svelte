@@ -25,12 +25,12 @@
     <Card
       shadow="sm"
       padding="lg"
-      class={`w-full md:w-96 my-2 relative h- ${
+      class={`w-full lg:w-96 my-2 relative  box-border min-h-60 ${
         clicked === project.id ? "h-auto" : "h-60"
       }} `}
     >
       <Group position="apart">
-        <Text weight={700} size="lg" className="py-2 font-bold"
+        <Text weight={700} size="lg" className="py-1 font-bold"
           >{i + 1}. {" "}{project.name}</Text
         >
         <Divider />

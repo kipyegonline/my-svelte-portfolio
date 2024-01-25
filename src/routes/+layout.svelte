@@ -11,7 +11,7 @@
 
   import CustomHeader from "./Header.svelte";
   import "./styles.css";
-  let isMobile = matchMedia("(min-width:481px").matches;
+  let isMobile = globalThis?.window?.matchMedia("(min-width:481px").matches;
 </script>
 
 <AppShell>
@@ -19,7 +19,7 @@
     hidden={!false}
     width={{ lg: 300, base: "100%" }}
     fixed={isMobile}
-    class=" p-0 sm:p-4 mx-auto"
+    class=" p-0 sm:p-4 "
     position={{ top: 0, left: 0 }}
   >
     <CustomHeader />
@@ -39,7 +39,7 @@
     >
   </main>
 </AppShell>
-<footer class="p-4 text-xl">
+<footer class="p-4 text-xl flex flex-col items-center">
   All Rights Reserved &copy; {new Date().getFullYear()}
 </footer>
 
@@ -58,7 +58,7 @@
     max-width: 100%;
     /*max-width: 64rem;
      max-width: 100%;*/
-    border: 1px solid magenta;
+
     margin: 0 auto;
     box-sizing: border-box;
   }

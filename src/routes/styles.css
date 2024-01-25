@@ -35,7 +35,6 @@ body {
       var(--color-bg-1) 15%,
       var(--color-bg-2) 50%
     );
-  border: 1px solid purple;
 }
 
 h1,

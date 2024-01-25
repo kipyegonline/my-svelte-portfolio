@@ -70,7 +70,7 @@
   />
 </svelte:head>
 
-<section class="border-green-400 border w-full dark:text-white">
+<section class=" w-full">
   <div class="py-2 mb-2">
     <h1 class=" hidden sm:block bg-blue-600 text-white rounded-md mb-2">
       Vincent Kipyegon Koech
@@ -98,7 +98,7 @@
     on:change={handleTabChange}
     grow
     position="apart"
-    class="border border-red-400 w-full py-2"
+    class=" w-full py-2"
     variant="pills"
     color="red"
   >
