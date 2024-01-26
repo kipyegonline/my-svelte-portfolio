@@ -17,7 +17,11 @@
   let isMobile = globalThis?.window?.matchMedia("(min-width:481px").matches;
   function toggleTheme() {
     colorScheme.update((v) => (v === "light" ? "dark" : "light"));
+    $colorScheme === "dark"
+      ? document.body.setAttribute("data-mode", "dark")
+      : document.body.removeAttribute("data-mode");
   }
+  $: isDark = $colorScheme === "dark";
 </script>
 
 <AppShell>
@@ -41,7 +45,7 @@
 
   <div class="block sm:hidden w-full mx-auto">
     <h1
-      class="bg-blue-600 text-white rounded-md mb-0 md:mb-2 text-xl py-4 w-full"
+      class={` bg-blue-600 text-white rounded-md mb-0 md:mb-2 text-xl py-4 w-full`}
     >
       Vincent Kipyegon Koech
     </h1>
@@ -59,7 +63,7 @@
 <footer class="p-4 text-xl flex flex-col items-center">
   <div class="absolute right-0 mr-2">
     {#if $colorScheme === "light"}
-      <span on:click={toggleTheme} role="button"> <Moon /></span>
+      <span on:click={toggleTheme} role="button"> <Moon size={48} /></span>
     {:else}
       <span on:click={toggleTheme} role="button"><Sun /></span>
     {/if}

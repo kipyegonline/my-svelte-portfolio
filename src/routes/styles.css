@@ -41,11 +41,11 @@ body {
       var(--color-bg-2) 50%
     );*/
 }
-/*
+
 body[data-mode="dark"] {
-  background: rgba(0, 0, 0, 0.8); /* darkslategray !important
+  background: rgba(0, 0, 0, 0.8); /* darkslategray !important*/
   color: white !important;
-}*/
+}
 
 h1,
 h2,

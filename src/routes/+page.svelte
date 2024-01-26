@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Tabs, Divider, Chip } from "@svelteuidev/core";
+  import { Tabs, Divider, Chip, colorScheme } from "@svelteuidev/core";
   import MainCard from "../components/card/card.svelte";
 
   // import Icon from "@iconify/svelte";
@@ -60,6 +60,7 @@
     });
     projects = selected;
   };
+  $: isDark = $colorScheme === "dark";
 </script>
 
 <svelte:head>
@@ -72,7 +73,7 @@
 
 <section class="dark:bg-black dark:text-white w-full">
   <div class="py-2 mb-2">
-    <h1 class=" hidden sm:block bg-blue-600 text-white rounded-md mb-2">
+    <h1 class={` hidden sm:block  bg-blue-600 text-white rounded-md mb-2`}>
       Vincent Kipyegon Koech.
     </h1>
     <p class="py-4 px-2 text-justify">
