@@ -7,11 +7,17 @@
     Header,
     Title,
     Divider,
+    Switch,
+    colorScheme,
   } from "@svelteuidev/core";
-
+  import { Sun, Moon } from "lucide-svelte";
   import CustomHeader from "./Header.svelte";
+  //import { colorScheme } from "../store/store";
   import "./styles.css";
   let isMobile = globalThis?.window?.matchMedia("(min-width:481px").matches;
+  function toggleTheme() {
+    colorScheme.update((v) => (v === "light" ? "dark" : "light"));
+  }
 </script>
 
 <AppShell>
@@ -24,6 +30,15 @@
   >
     <CustomHeader />
   </Navbar>
+  <Switch on:change={toggleTheme} class="absolute right-0 mr-2 hidden" />
+  <div class="absolute right-0 mr-2">
+    {#if $colorScheme === "light"}
+      <span on:click={toggleTheme} role="button"> <Moon /></span>
+    {:else}
+      <span on:click={toggleTheme} role="button"><Sun /></span>
+    {/if}
+  </div>
+
   <div class="block sm:hidden w-full mx-auto">
     <h1
       class="bg-blue-600 text-white rounded-md mb-0 md:mb-2 text-xl py-4 w-full"
@@ -34,12 +49,21 @@
   </div>
 
   <main class="">
-    <SvelteUIProvider withNormalizeCSS withGlobalStyles
-      ><slot /></SvelteUIProvider
+    <SvelteUIProvider
+      withNormalizeCSS
+      withGlobalStyles
+      themeObserver={$colorScheme}><slot /></SvelteUIProvider
     >
   </main>
 </AppShell>
 <footer class="p-4 text-xl flex flex-col items-center">
+  <div class="absolute right-0 mr-2">
+    {#if $colorScheme === "light"}
+      <span on:click={toggleTheme} role="button"> <Moon /></span>
+    {:else}
+      <span on:click={toggleTheme} role="button"><Sun /></span>
+    {/if}
+  </div>
   All Rights Reserved &copy; {new Date().getFullYear()}
 </footer>
 

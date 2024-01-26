@@ -39,7 +39,7 @@
 
   const handleTabChange = (e: any) => {
     clickedStack = "";
-    console.log(e.detail);
+
     const {
       detail: { index, key },
     } = e;
@@ -70,10 +70,10 @@
   />
 </svelte:head>
 
-<section class=" w-full">
+<section class="dark:bg-black dark:text-white w-full">
   <div class="py-2 mb-2">
     <h1 class=" hidden sm:block bg-blue-600 text-white rounded-md mb-2">
-      Vincent Kipyegon Koech
+      Vincent Kipyegon Koech.
     </h1>
     <p class="py-4 px-2 text-justify">
       I am a Frontend web developer with 5 years of experience designing,

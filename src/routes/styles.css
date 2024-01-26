@@ -16,13 +16,18 @@
   --column-margin-top: 4rem;
   font-family: var(--font-body);
   color: var(--color-text);
+  --sv-bg-1: #f0f2f5;
+  --sv-bg-2: red;
+  color-scheme: dark light;
 }
 
 body {
   min-height: 100vh;
   margin: 0;
   background-attachment: fixed;
-  background-color: var(--color-bg-1);
+  background-color: var(
+    --sv-bg-1
+  ); /*
   background-size: 100vw 100vh;
   background-image: radial-gradient(
       50% 50% at 50% 50%,
@@ -34,8 +39,13 @@ body {
       var(--color-bg-0) 0%,
       var(--color-bg-1) 15%,
       var(--color-bg-2) 50%
-    );
+    );*/
 }
+/*
+body[data-mode="dark"] {
+  background: rgba(0, 0, 0, 0.8); /* darkslategray !important
+  color: white !important;
+}*/
 
 h1,
 h2,

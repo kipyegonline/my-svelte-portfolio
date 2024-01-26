@@ -309,3 +309,4 @@ The app can also compare upto 2 images and return the comparison in text format.
 ];
 
 export const portfolio: Writable<Project[]> = writable(projects);
+export const colorScheme = writable("dark");
