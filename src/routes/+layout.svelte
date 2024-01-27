@@ -37,9 +37,9 @@
   <Switch on:change={toggleTheme} class="absolute right-0 mr-2 hidden" />
   <div class="absolute right-0 mr-2">
     {#if $colorScheme === "light"}
-      <span on:click={toggleTheme} role="button"> <Moon /></span>
+      <span on:click={toggleTheme} role="button"> <Moon size={30} /></span>
     {:else}
-      <span on:click={toggleTheme} role="button"><Sun /></span>
+      <span on:click={toggleTheme} role="button"><Sun size={30} /></span>
     {/if}
   </div>
 
@@ -63,9 +63,9 @@
 <footer class="p-4 text-xl flex flex-col items-center">
   <div class="absolute right-0 mr-2">
     {#if $colorScheme === "light"}
-      <span on:click={toggleTheme} role="button"> <Moon size={48} /></span>
+      <span on:click={toggleTheme} role="button"> <Moon size={30} /></span>
     {:else}
-      <span on:click={toggleTheme} role="button"><Sun /></span>
+      <span on:click={toggleTheme} role="button"><Sun size={30} /></span>
     {/if}
   </div>
   All Rights Reserved &copy; {new Date().getFullYear()}
