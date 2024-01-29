@@ -73,7 +73,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     long_des: `This web app uses AWS cognito to sign up and login users (hospital providers) to the backend portal to view patients who have booked appointments via Umzima app`,
     year: 2023,
     repo: null,
-    link: "civisec.io ",
+    link: "http://civisec.io ",
     openSource: false,
   },
   {
@@ -231,7 +231,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     long_des: `The app has a backend for adding events, sermons and church based sessions such as prayer and fasting weeks. The backend is based on PHP and MySQL where these events and sessions are persisted`,
     year: 2020,
     repo: " https://github.com/kipyegonline/lakeview-gatsby",
-    link: "www.lakeviewagc.net",
+    link: "http://lakeviewagc.net",
     openSource: false,
   },
   {
