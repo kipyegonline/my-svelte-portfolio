@@ -34,7 +34,7 @@
   >
     <CustomHeader />
   </Navbar>
-  <Switch on:change={toggleTheme} class="absolute right-0 mr-2 hidden" />
+  <!--<Switch on:change={toggleTheme} class="absolute right-0 mr-2 hidden" />-->
   <div class="absolute right-0 mr-2">
     {#if $colorScheme === "light"}
       <span on:click={toggleTheme} role="button"> <Moon size={30} /></span>
