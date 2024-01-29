@@ -73,7 +73,9 @@
 
 <section class="dark:bg-black dark:text-white w-full">
   <div class="py-2 mb-2">
-    <h1 class={` hidden sm:block  bg-blue-600 text-white rounded-md mb-2`}>
+    <h1
+      class={` hidden sm:block  bg-blue-600 text-white rounded-md mb-2 text-4xl py-2 `}
+    >
       Vincent Kipyegon Koech.
     </h1>
     <p class="py-4 px-2 text-justify">

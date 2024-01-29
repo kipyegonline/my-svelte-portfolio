@@ -7,6 +7,7 @@
     Image,
     Text,
     Collapse,
+    Box,
     Divider,
   } from "@svelteuidev/core";
   import Socials from "../Socials/Socials.svelte";
@@ -35,22 +36,23 @@
         >
         <Divider />
       </Group>
-      <div class="py-4">
+      <Box class="py-4">
         <p>
           {project.short_des}
         </p>
-      </div>
+      </Box>
 
       <Button
         variant="light"
         on:click={() => handleButtonClick(project.id)}
         color="blue"
         fullSize
-        class="absolute bottom-12 left-0 right-0"
+        class="!absolute bottom-12 left-0 right-0"
         style="display:{clicked === project.id ? 'none' : 'block'}"
       >
         {clicked === project.id ? "see less" : "Read More"}
       </Button>
+
       <Collapse open={clicked === project.id} transitionDuration={500}>
         <div class="p-4">
           <p>{project.long_des}</p>
