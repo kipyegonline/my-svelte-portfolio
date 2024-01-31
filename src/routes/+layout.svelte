@@ -14,13 +14,9 @@
   import CustomHeader from "./Header.svelte";
   //import { colorScheme } from "../store/store";
   import "./styles.css";
+  import DarkMode from "../components/DarkModeSwitch/DarkMode.svelte";
   let isMobile = globalThis?.window?.matchMedia("(min-width:481px").matches;
-  function toggleTheme() {
-    colorScheme.update((v) => (v === "light" ? "dark" : "light"));
-    $colorScheme === "dark"
-      ? document.body.setAttribute("data-mode", "dark")
-      : document.body.removeAttribute("data-mode");
-  }
+
   $: isDark = $colorScheme === "dark";
 </script>
 
@@ -35,13 +31,7 @@
     <CustomHeader />
   </Navbar>
   <!--<Switch on:change={toggleTheme} class="absolute right-0 mr-2 hidden" />-->
-  <div class="absolute right-0 mr-2">
-    {#if $colorScheme === "light"}
-      <span on:click={toggleTheme} role="button"> <Moon size={30} /></span>
-    {:else}
-      <span on:click={toggleTheme} role="button"><Sun size={30} /></span>
-    {/if}
-  </div>
+  <DarkMode />
 
   <div class="block sm:hidden w-full mx-auto">
     <h1
@@ -60,15 +50,14 @@
     >
   </main>
 </AppShell>
-<footer class="p-4 text-xl flex flex-col items-center">
-  <div class="absolute right-0 mr-2">
-    {#if $colorScheme === "light"}
-      <span on:click={toggleTheme} role="button"> <Moon size={30} /></span>
-    {:else}
-      <span on:click={toggleTheme} role="button"><Sun size={30} /></span>
-    {/if}
-  </div>
-  All Rights Reserved &copy; {new Date().getFullYear()}
+<hr class="border" />
+<footer
+  class={`p-4 text-xl flex flex-col items-center ${
+    isDark ? "bg-gray-900" : "bg-gray-300"
+  }`}
+>
+  <DarkMode />
+  &copy; {new Date().getFullYear()} | All Rights Reserved
 </footer>
 
 <style>

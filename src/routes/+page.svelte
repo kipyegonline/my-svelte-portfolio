@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Tabs, Divider, Chip, colorScheme } from "@svelteuidev/core";
+  //import { typewriter } from "@svelteuidev/motion";
   import MainCard from "../components/card/card.svelte";
 
   // import Icon from "@iconify/svelte";
@@ -18,14 +19,15 @@
   let active = -1;
   let skills = [
     " HTML5, CSS3, JavaScript (ES6+), Typescript",
-    " React, Angular, Svelte",
+    " React, Angular,Next JS, Svelte,Redwood js,Svelte Kit",
+    "Generative AI tools (Claude AI,Google bard,Chat GPT)",
     " PHP/MYSQL/Laravel",
-    " Tailwind CSS,Material UI, Ant design",
-    " Responsive/mobile web design",
-    " Cross-browser compatibility",
-    " Accessible web design",
-    " Git, GitHub, CI/CD tools",
-    " AWS ",
+    " Tailwind CSS,Material UI,Bootstrap, Ant design",
+    " Responsive/mobile web design & Accessible web design",
+    " Cross-browser compatibility ",
+
+    " Git, GitHub, CI/CD tools, Github actions",
+    " AWS - Dyynamo DB, Cognito, Amplify & Elastic Beanstalk",
   ];
 
   let logoClicked = false,
@@ -81,9 +83,10 @@
     <p class="py-4 px-2 text-justify">
       I am a Frontend web developer with 5 years of experience designing,
       developing, and maintaining responsive websites and web applications for
-      production. Skilled in HTML, CSS, JavaScript, TypeScript, React, Angular,
-      and Svelte js. I am also proficient in Node.js. I am passionate about
-      perfomant and user-friendly interface design.
+      production. Skilled in HTML, CSS, JavaScript, TypeScript, React (React18 &
+      Next Js), Angular, and Svelte js (Svelte Kit). I am also proficient in
+      Node.js. I am passionate about perfomant and user-friendly interface
+      design.
     </p>
     <div class="py-2 px-4 md:px-2 flex flex-col items-center justify-center">
       <h3 class="text-lg font-bold">Skills assessment</h3>
