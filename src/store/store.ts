@@ -25,7 +25,7 @@ const projects: Array<Project> = [
 The app can also compare upto 2 images and return the comparison in text format.`,
     year: 2024,
     repo: "https://github.com/kipyegonline/gemini-ai-api",
-    link: "https://image-reader-357a1--pr2-firebase-uqkwx1zm.web.app/",
+    link: "https://image-reader-357a1.web.app/",
     openSource: false,
   },
   {
