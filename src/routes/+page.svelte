@@ -98,7 +98,7 @@
     </div>
   </div>
   <!-- <Table />  <Grid />-->
-  <h3 class="text-xl font-bold">Portfolio</h3>
+  <h3 class="text-xl font-bold" id="porfolio">Portfolio</h3>
 
   <Tabs
     on:change={handleTabChange}
