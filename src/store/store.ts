@@ -34,7 +34,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     languages: ["Typescript"],
     frameworks: ["React", "typescript", "next js", "Tailwind"],
     short_des:
-      "An interactive cyber security tool designed to help measure and surface vulnerabilities in cybersecurity approach.",
+      "An interactive cyber security tool designed to help organisations measure and surface vulnerabilities in cybersecurity approach.",
 
     long_des: `The web application is designed to help organisation gauge cybercurity vulnerabilities. The four part assesments will then provide a summary insights of the results and the recommendations on areas of identified improvement`,
     year: 2023,
@@ -48,7 +48,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     languages: ["Typescript"],
     frameworks: ["React", "typescript", "next js", "headless ui"],
     short_des:
-      "A landing page for Umzima mobile app, a health recording and hospital appointment app.",
+      "A landing page for Umzima mobile app, a health recording and appointment app for small hospitals and clinic in Kenya track the medical recordds of their patients.",
 
     long_des: `The web application  basically has 2 functionalities, displaying information about Umzima mobile app and a fuctionality to allow user to sign up for early access of the mobile app.`,
     year: 2023,
@@ -68,7 +68,7 @@ The app can also compare upto 2 images and return the comparison in text format.
       "AWS cognito & DynamoDB",
     ],
     short_des:
-      "A web application for hospital providers to view patients appointments",
+      "A web application dashboard for hospital providers in Kenya to view patients appointments",
 
     long_des: `This web app uses AWS cognito to sign up and login users (hospital providers) to the backend portal to view patients who have booked appointments via Umzima app`,
     year: 2023,
@@ -82,7 +82,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     languages: ["Typescript"],
     frameworks: ["Svelte", "typescript"],
     short_des:
-      "An open source software for presenting show and sermons in church",
+      "An open source software for presenting show and sermons in church, customizing it for my church in Nairobi Kenya.",
 
     long_des: `I forked and contributed to the application by improving the PWA part of it so that it can cache correctly. The website is built using svelte,Typescript and Electron`,
     year: 2023,
@@ -95,7 +95,8 @@ The app can also compare upto 2 images and return the comparison in text format.
     name: "Open MRS ",
     languages: ["Typescript"],
     frameworks: ["React", "Carbon UI", "typescript"],
-    short_des: "An  open Medical Records System for hospitals and clinics",
+    short_des:
+      "An  open Medical Records System for hospitals and clinics to registers patients,search patients,dispaly patients lists book appointments and active visits for outpatient and inpatient list. We are customizing  it for small hospitals and clinics in Kenya",
 
     long_des: `The open MRS is a monorepo with 6 modules for patient management; registering patients, booking appointments,patient search,active visits,outpatient and patients list. I contributed and customized the patient registration module. `,
     year: 2023,
@@ -116,9 +117,9 @@ The app can also compare upto 2 images and return the comparison in text format.
       "Laravel",
     ],
     short_des:
-      "A financial listing web application listing financial institutions in Kenya and their products and services",
+      "A one-stop platform of financial products and  services listing web application. The application seeks to address the financial literacy gap among Kenyans seeking financial services on financial institutions in Kenya",
 
-    long_des: `The web app has 6 sevices including: loans,bank accounts,investments,forex and property financeand  a section listing financial institutions (Banks & Saccos) in Kenya. I also developed financial calculators for calculating interests across this services `,
+    long_des: `The web app has 6 services including: loans,bank accounts,investments,forex and property financeand  a section listing financial institutions (Banks & Saccos) in Kenya. I also developed financial calculators for calculating interests across this services `,
     year: 2022,
     repo: null,
     link: "https://finwit.co ",
@@ -136,7 +137,7 @@ The app can also compare upto 2 images and return the comparison in text format.
       "redux",
     ],
     short_des:
-      "A web application for Mentor Sacco Society Limited based in Muranga Kenya",
+      "A web application for Mentor Sacco Society Limited, a Savings and credit financial institutions based in Muranga, Kenya. It helps thousands of people to open savings accounts virtually using their mobile phones, computers and apply for the the products and services offered by Mentor Sacco. The products and services include savings accounts,insurance,loan d and investments products",
 
     long_des: `It includes its website,oline membership application sections, a membership portal, products and service applications and listing section. Plugged in Google Analytics ,web performance and SEO. `,
     year: 2022,
@@ -150,7 +151,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     languages: ["Typescript"],
     frameworks: ["Next js", "Material UI", "typescript", "Tailwind", "react"],
     short_des:
-      "I created this app to visualize the 2022 General Elections in Kenya",
+      "I created this app to help Kenyans follow the  2022 presidential elections results in Kenya via visuals with data streaming from a REST API owned by Nation Media Group, Kenya's leading newspaper. The app relayed real time provisional elections results independetly tallied by the media house. The app received a huge traffic during the election period.",
 
     long_des: `The app used REST API to fetch realtime election updates from Nation Media Group API`,
     year: 2022,
@@ -164,7 +165,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     languages: ["javascript"],
     frameworks: ["Next js", "Typescript", "react", "Material UI"],
     short_des:
-      "I created this app to help farmers keep track of inputs and output their short term crops in the farm from planting to harvesting period",
+      "I created this inventory web app to help farmers keep track of inputs and output their short term crops in the farm from planting to harvesting period. ",
 
     long_des: `The app  uses Laravel backend to store farmer records`,
     year: 2022,
@@ -185,7 +186,8 @@ The app can also compare upto 2 images and return the comparison in text format.
       "Laravel",
       "javascript",
     ],
-    short_des: "A blood pressure record keeping app",
+    short_des:
+      "A blood pressure record keeping app for patients living with hypertension to record their daily BP readings",
 
     long_des: `An interactive visualization web app where BP patients can add their daily BP readings , sent to database and the doctor can interpret the readings  on interactive charts.`,
     year: 2021,
@@ -226,7 +228,8 @@ The app can also compare upto 2 images and return the comparison in text format.
     name: "Church web app  ",
     languages: ["javascript"],
     frameworks: ["React", "javascript", "Material UI", "Gatsby"],
-    short_des: "A   church website for lakeview AGC Nakuru  ",
+    short_des:
+      "A   church website for lakeview AGC Nakuru, The website a one-stop platform for church-going residents of Nakuru to access information about the church events, services and other pertinent information relating to the church activities.  ",
 
     long_des: `The app has a backend for adding events, sermons and church based sessions such as prayer and fasting weeks. The backend is based on PHP and MySQL where these events and sessions are persisted`,
     year: 2020,
@@ -240,7 +243,7 @@ The app can also compare upto 2 images and return the comparison in text format.
     languages: ["javascript"],
     frameworks: ["React", "javascript", "Material UI", "Gatsby"],
     short_des:
-      "A visualization app showing road accidents in Kenya, according accident statistics by the National Transport and Safety Authority.u  ",
+      "A visualization app showing road accidents in Kenya, according accident statistics by the National Transport and Safety Authority.The application targets data analysts seeking to analyse the transport systems in Kenya  ",
 
     long_des: `The app uses D3 Js charting library to display interactive charts for accidents that occor across the road transpor system. The monthly data is downloaded from NTSA website `,
     year: 2020,
@@ -298,7 +301,8 @@ The app can also compare upto 2 images and return the comparison in text format.
       "MySQL",
       "javascript",
     ],
-    short_des: "An interactive map app showing deforestation in Kenya ",
+    short_des:
+      "An interactive map app showing deforestation in Kenya over the period between 2012 and 2018 ",
 
     long_des: `The app fetches data from a REST API then displays them on an interactive map of Kenya. `,
     year: 2019,
