@@ -80,13 +80,17 @@
     >
       Vincent Kipyegon Koech.
     </h1>
-    <p class="py-4 px-2 text-justify">
-      I am a Frontend web developer with 5 years of experience designing,
-      developing, and maintaining responsive websites and web applications for
-      production. Skilled in HTML, CSS, JavaScript, TypeScript, React (React18 &
-      Next Js), Angular, and Svelte js (Svelte Kit). I am also proficient in
-      Node.js. I am passionate about perfomant and user-friendly interface
-      design.
+    <p class="py-2 px-2 text-justify">
+      I am a web developer with over 5 years of experience designing,
+      developing, maintaining responsive websites and end to end web
+      applications for <b>production</b>.
+    </p>
+    <p>
+      I am skilled in HTML, CSS, JavaScript, TypeScript, React (React18 & Next
+      Js), Angular, and Svelte js (Svelte Kit). I am also proficient in Node.js.
+      I am passionate about perfomant and user-friendly interface design. I am
+      proficient in developing RESTful applications using express js and PHP
+      laravel framework
     </p>
     <div class="py-2 px-4 md:px-2 flex flex-col items-center justify-center">
       <h3 class="text-lg font-bold">Skills assessment</h3>
@@ -112,6 +116,7 @@
 
     <Tabs.Tab label={"All"} tabKey="-1">
       {#if active === -1}
+        <hr class="mb-2" />
         <section class="relative">
           <Framework onClick={hanldeLogoClick} />
           {#if clickedStack}
@@ -150,6 +155,7 @@
           {/each}
           {checked.value}
         </div>
+        <hr class="mb-2" />
         <section>
           <Framework onClick={hanldeLogoClick} />
           {#if clickedStack && projects.length > 0}

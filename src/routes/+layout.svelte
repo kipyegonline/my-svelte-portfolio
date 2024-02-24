@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import { SvelteUIProvider } from "@svelteuidev/core";
   import {
     fns,
@@ -18,6 +19,7 @@
   let isMobile = globalThis?.window?.matchMedia("(min-width:481px").matches;
 
   $: isDark = $colorScheme === "dark";
+ 
 </script>
 
 <AppShell>
