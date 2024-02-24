@@ -14,6 +14,19 @@ type Project = {
 };
 const projects: Array<Project> = [
   {
+    id: 18,
+    name: "Agroecological app",
+    languages: ["Typescript"],
+    frameworks: ["svelte", "svelte kit"],
+    short_des:
+      "Information site for agroecology; priniples,elements,examples and blogs.Agroecology focuses on sustainable use of environment for the mutual benefit of human beings, animals and soil.",
+    long_des: `This app showcases agroecology, a field in agriculture that focuses on sustatinable use of environmemt for the mutual benefit of human beings,animals and soil.`,
+    year: 2024,
+    repo: "https://github.com/kipyegonline/agroecology-app",
+    link: "https://agroecology-app.vercel.app/",
+    openSource: false,
+  },
+  {
     id: 1,
     name: "Image Reader Artificial Intelligence app",
     languages: ["Typescript"],

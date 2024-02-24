@@ -31,7 +31,7 @@
       }} `}
     >
       <Group position="apart">
-        <Text weight={700} size="lg" className="py-1 font-bold"
+        <Text size="lg" className="py-1 font-medium"
           >{i + 1}. {" "}{project.name}</Text
         >
         <Divider />

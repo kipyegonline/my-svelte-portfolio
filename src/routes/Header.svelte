@@ -21,9 +21,7 @@
   </div>
   <div class="p-4 text-xl font-medium flex flex-col items-center">
     <p class="hidden">Vincent Kipyegon</p>
-    <p class="italic text-base pb-2">
-      Frontend web developer based in Nairobi,Kenya.
-    </p>
+    <p class="italic text-base pb-2">Web developer based in Nairobi,Kenya.</p>
     <p class="italic text-base py-0">
       Technical writer at <a
         class="text-blue-800 hover:text-blue-800"
@@ -39,8 +37,7 @@
         target="_blank">vince.kipyegon11@gmail.com</a
       >
     </p>
-    <p>Flexible & agile</p>
-    s
+    <p class="text-sm py-2">Flexible & agile</p>
   </div>
   <Divider />
 
