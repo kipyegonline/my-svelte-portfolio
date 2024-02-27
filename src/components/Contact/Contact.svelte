@@ -107,7 +107,7 @@
     <button
       disabled={loading}
       type="submit"
-      class="p-2 bg-green-600 text-white w-full rounded-lg"
+      class="p-2 bg-blue-600 text-white w-full rounded-lg"
       >{loading ? "Submitting" : "Submit"}
     </button>
 
