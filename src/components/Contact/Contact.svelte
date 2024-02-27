@@ -35,17 +35,17 @@
     if (name.trim().length <= 0) {
       error = "Name is required";
       return false;
-    } else if (email.trim().length <= 0) {
+    } /*else if (email.trim().length <= 0) {
       error = "Email is required";
       return false;
-    } else if (message.trim().length <= 0) {
+    } */ else if (message.trim().length <= 0) {
       error = "Enter message";
       return false;
     }
     error = "";
     let response = await submitEmail({ name, email, message });
     if (response) {
-      success = "Message submitted successfully";
+      success = "Message submitted to Vincent successfully";
       setTimeout(() => {
         success = "";
         closeModal();
@@ -66,9 +66,7 @@
   on:close={handleClose}
 >
   <form on:submit|preventDefault={handleSubmit}>
-    <p class=" mb-3 text-center py-2 text-xl font-medium">
-      Contact Agroecology Kenya
-    </p>
+    <p class=" mb-3 text-center py-2 text-xl font-medium">Contact Vincent,</p>
     <div class="flex flex-col gap-1 mb-3 rounded-sm">
       <label for="name">Enter name:</label>
       <input
@@ -79,7 +77,7 @@
       />
     </div>
     <div class="flex flex-col gap-1 mb-3 rounded-sm">
-      <label for="email">Email:</label>
+      <label for="email">Email: (optional)</label>
       <input
         type="text"
         class="border py-2 px-2 rounded-md"
