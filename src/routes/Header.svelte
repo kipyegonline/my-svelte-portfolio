@@ -1,11 +1,13 @@
 <script>
   import { Image, IconRenderer, Divider } from "@svelteuidev/core";
+  import { MessageCircleMore } from "lucide-svelte";
   import { page } from "$app/stores";
   import logo from "$lib/images/svelte-logo.svg";
   import github from "$lib/images/github-icon.svg";
   import twitter from "$lib/images/x-social-media-black-icon.svg";
   import linkedin from "$lib/images/linkedin-square-icon.svg";
   import Framework from "../components/frameworks/framework.svelte";
+  import Contact from "../components/Contact/Contact.svelte";
 
   let socials = [
     { link: "https://github.com/kipyegonline", icon: github },
@@ -13,9 +15,11 @@
     { link: "https://linkedin.com/in/kipyegonline", icon: linkedin },
   ];
   let roles = ["Software developer", "Freelance Journalist"];
+  let dm = false;
 </script>
 
 <header class="overflow-y-scroll">
+  <Contact open={dm} closeModal={() => (dm = false)} />
   <div>
     <Image src="/at_vince.png" class="w-full h-auto" alt="my pic" />
   </div>
@@ -36,8 +40,20 @@
         href="mailto:vince.kipyegon11@gmail.com"
         target="_blank">vince.kipyegon11@gmail.com</a
       >
+      <br />
     </p>
-    <p class="text-sm py-2">Flexible & agile</p>
+
+    <p class="text-base">
+      <button
+        class="cursor-pointer text-blue-800 hover:text-blue-800"
+        on:click={() => (dm = true)}
+      >
+        Send direct message <MessageCircleMore
+          size={20}
+          class="inline-block ml-1"
+        />
+      </button>
+    </p>
   </div>
   <Divider />
 
