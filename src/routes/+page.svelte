@@ -78,7 +78,7 @@
     <h1
       class={` hidden sm:block  bg-blue-600 text-white rounded-md mb-2 text-4xl py-2 `}
     >
-      Vincent Kipyegon Koech.
+      Vincent Kipyegon Koech
     </h1>
     <p class="py-2 px-2 text-justify">
       I am a web developer with over 5 years of experience designing,
@@ -90,10 +90,10 @@
       Js), Angular, and Svelte js (Svelte Kit). I am also proficient in Node.js.
       I am passionate about perfomant and user-friendly interface design. I am
       proficient in developing RESTful applications using express js and PHP
-      laravel framework
+      laravel framework. I am certified AWS cloud practitioner.
     </p>
     <div class="py-2 px-4 md:px-2 flex flex-col items-center justify-center">
-      <h3 class="text-lg font-bold">Skills assessment</h3>
+      <h3 class="text-lg font-bold underline">Skills assessment</h3>
       <ul>
         {#each skills as skill, i}
           <li class="list-disc">{skill}</li>
@@ -102,7 +102,8 @@
     </div>
   </div>
   <!-- <Table />  <Grid />-->
-  <h3 class="text-xl font-bold" id="porfolio">Portfolio</h3>
+  <h3 class="text-xl font-bold underline" id="porfolio">Portfolio</h3>
+  <hr />
 
   <Tabs
     on:change={handleTabChange}

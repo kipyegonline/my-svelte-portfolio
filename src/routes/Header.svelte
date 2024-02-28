@@ -23,7 +23,7 @@
   <div>
     <Image src="/at_vince.png" class="w-full h-auto" alt="my pic" />
   </div>
-  <div class="p-4 text-xl font-medium flex flex-col items-center">
+  <div class="p-4 text-xl font-medium flex flex-col items-start">
     <p class="hidden">Vincent Kipyegon</p>
     <p class="italic text-base pb-2">Web developer based in Nairobi,Kenya.</p>
     <p class="italic text-base py-0">
@@ -34,7 +34,7 @@
       >
     </p>
     <p class="italic text-base py-0">Freelance Journalist</p>
-    <p class="italic text-base py-0">
+    <p class="italic text-base py-0 hidden">
       Email: <a
         class="text-blue-800 hover:text-blue-800 inline-block"
         href="mailto:vince.kipyegon11@gmail.com"
