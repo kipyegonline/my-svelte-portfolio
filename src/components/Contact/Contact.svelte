@@ -66,7 +66,7 @@
   on:close={handleClose}
 >
   <form on:submit|preventDefault={handleSubmit}>
-    <p class=" mb-3 text-center py-2 text-xl font-medium">Contact Vincent,</p>
+    <p class=" mb-2 text-center py-2 text-2xl font-medium">Contact Vincent,</p>
     <div class="flex flex-col gap-1 mb-3 rounded-sm">
       <label for="name">Enter name:</label>
       <input
@@ -77,7 +77,7 @@
       />
     </div>
     <div class="flex flex-col gap-1 mb-3 rounded-sm">
-      <label for="email">Email: (optional)</label>
+      <label for="email">Email (optional):</label>
       <input
         type="text"
         class="border py-2 px-2 rounded-md"

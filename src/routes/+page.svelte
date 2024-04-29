@@ -19,7 +19,7 @@
   let active = -1;
   let skills = [
     " HTML5, CSS3, JavaScript (ES6+), Typescript",
-    " React, Angular,Next JS, Svelte,Redwood js,Svelte Kit",
+    " React, React Native, Angular,Next JS, Svelte,Redwood js,Svelte Kit",
     "Generative AI tools (Claude AI,Google bard,Chat GPT)",
     " PHP/MYSQL/Laravel",
     " Tailwind CSS,Material UI,Bootstrap, Ant design",
@@ -78,7 +78,7 @@
     <h1
       class={` hidden sm:block  bg-blue-600 text-white rounded-md mb-2 text-4xl py-2 `}
     >
-      Vincent Kipyegon Koech.
+      Vincent Kipyegon Koech
     </h1>
     <p class="py-2 px-2 text-justify">
       I am a web developer with over 5 years of experience designing,
@@ -87,13 +87,14 @@
     </p>
     <p>
       I am skilled in HTML, CSS, JavaScript, TypeScript, React (React18 & Next
-      Js), Angular, and Svelte js (Svelte Kit). I am also proficient in Node.js.
-      I am passionate about perfomant and user-friendly interface design. I am
-      proficient in developing RESTful applications using express js and PHP
-      laravel framework
+      Js),React Native, Angular, and Svelte js (Svelte Kit). I am also
+      proficient in Node.js. I am passionate about perfomant and user-friendly
+      interface design. I am proficient in developing RESTful applications using
+      express js and PHP laravel framework. I am certified AWS cloud
+      practitioner.
     </p>
     <div class="py-2 px-4 md:px-2 flex flex-col items-center justify-center">
-      <h3 class="text-lg font-bold">Skills assessment</h3>
+      <h3 class="text-lg font-bold underline">Skills assessment</h3>
       <ul>
         {#each skills as skill, i}
           <li class="list-disc">{skill}</li>
@@ -102,7 +103,8 @@
     </div>
   </div>
   <!-- <Table />  <Grid />-->
-  <h3 class="text-xl font-bold" id="porfolio">Portfolio</h3>
+  <h3 class="text-xl font-bold underline" id="porfolio">Portfolio</h3>
+  <hr />
 
   <Tabs
     on:change={handleTabChange}
