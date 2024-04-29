@@ -61,7 +61,7 @@
     <p class="text-center font-bold text-underline">Skills</p>
     <div class="p-4">
       <code>Javascript/Typescript, HTML, CSS</code>
-      <code> React,Angular,Svelte </code>
+      <code> React,React Native,Angular,Svelte </code>
     </div>
     <hr class="mb-2" />
     <p class="text-center font-bold text-underline">Other Skills</p>

@@ -19,7 +19,7 @@
   let active = -1;
   let skills = [
     " HTML5, CSS3, JavaScript (ES6+), Typescript",
-    " React, Angular,Next JS, Svelte,Redwood js,Svelte Kit",
+    " React, React Native, Angular,Next JS, Svelte,Redwood js,Svelte Kit",
     "Generative AI tools (Claude AI,Google bard,Chat GPT)",
     " PHP/MYSQL/Laravel",
     " Tailwind CSS,Material UI,Bootstrap, Ant design",
@@ -87,10 +87,11 @@
     </p>
     <p>
       I am skilled in HTML, CSS, JavaScript, TypeScript, React (React18 & Next
-      Js), Angular, and Svelte js (Svelte Kit). I am also proficient in Node.js.
-      I am passionate about perfomant and user-friendly interface design. I am
-      proficient in developing RESTful applications using express js and PHP
-      laravel framework. I am certified AWS cloud practitioner.
+      Js),React Native, Angular, and Svelte js (Svelte Kit). I am also
+      proficient in Node.js. I am passionate about perfomant and user-friendly
+      interface design. I am proficient in developing RESTful applications using
+      express js and PHP laravel framework. I am certified AWS cloud
+      practitioner.
     </p>
     <div class="py-2 px-4 md:px-2 flex flex-col items-center justify-center">
       <h3 class="text-lg font-bold underline">Skills assessment</h3>
