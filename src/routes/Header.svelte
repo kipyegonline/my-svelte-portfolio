@@ -21,7 +21,7 @@
 <header class="overflow-y-scroll">
   <Contact open={dm} closeModal={() => (dm = false)} />
   <div>
-    <Image src="/at_vince.png" class="w-full h-auto" alt="my pic" />
+    <Image src="/vince_profile.jpg" class="w-full h-auto" alt="my pic" />
   </div>
   <div class="p-4 text-xl font-medium flex flex-col items-start">
     <p class="hidden">Vincent Kipyegon</p>
