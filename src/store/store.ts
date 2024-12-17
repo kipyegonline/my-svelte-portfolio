@@ -14,6 +14,74 @@ type Project = {
 };
 const projects: Array<Project> = [
   {
+    id: 1,
+    name: "Image Reader AI app",
+    languages: ["Typescript", "Laravel"],
+    frameworks: ["React", "typescript", "Tailwind", "Remix js"],
+    short_des:
+      "A generative AI image to text app that reads,extracta text from image and interprets  images using Google Gemini AI",
+    long_des: `A prototype photo sharing web application that allows users to create accounts, add photo albums and associate the albums with photos. Users can edit their own photos but can share any photo on the platform. Uses a laravel backend to map albums,images to users.`,
+    year: 2024,
+    repo: "",
+    link: "",
+    openSource: false,
+  },
+  {
+    id: 1.4,
+    name: "Savon web app ",
+    languages: ["Typescript"],
+    frameworks: ["React", "typescript", "Tailwind", "AI"],
+    short_des:
+      "A photo sharing web application that allows users to sign up accounts, create and share photo albums.",
+    long_des: `An Artificial Intelligence web app powered by Google Gemini API to read and interpret images to text using multi modal models.
+
+The app can also compare upto 2 images and return the comparison in text format.`,
+    year: 2024,
+    repo: "https://github.com/kipyegonline/savon",
+    link: "https://savon-one.vercel.app/",
+    openSource: false,
+  },
+  {
+    id: 1.3,
+    name: "Greenhub  app",
+    languages: ["Typescript"],
+    frameworks: ["React", "typescript", "Tailwind", "AWS"],
+    short_des:
+      "A web application for sharing climate change statistics, insights and climate change based job listings",
+    long_des: ` A next js web application that serves  as a repository for climate change related statistics files, interactive charts and sign in section for organisations and institutions to create accounts. It has a climate change jobs listing section that is powered by Elastic  search and jobs scrapped and served via AWS DynamoDB. The app is hosted on AWS amplify.`,
+    year: 2024,
+    repo: "",
+    link: "https://staging.d1pm6odae4jkvy.amplifyapp.com/",
+    openSource: false,
+  },
+  {
+    id: 1.2,
+    name: "Trifit web app",
+    languages: ["Typescript"],
+    frameworks: ["React", "typescript", "Tailwind", "AI"],
+    short_des:
+      " interactive official web application for Trifit, a sports and wellness company",
+    long_des: `A responsive web application created using next js app router version to showcase the company profile, activities and an e-commerce shop platform for buying merchandise by Trifit.`,
+    year: 2024,
+    repo: "https://github.com/fourbic/trifit",
+    link: "https://test.teamtrifit.co.ke",
+    openSource: false,
+  },
+  {
+    id: 1.1,
+    name: "Fourbic company website",
+    languages: ["Typescript"],
+    frameworks: ["React", "typescript", "Tailwind", "AI"],
+    short_des:
+      "Interactive official Company website showcasing the work of Fourbic, a Kenyan based start up specializing data management and visualization",
+    long_des: `A responsive web application created using next js app router version.`,
+    year: 2024,
+    repo: "https://github.com/fourbic/fourbic-website",
+    link: "https://fourbic.com",
+    openSource: false,
+  },
+
+  {
     id: 18,
     name: "Agroecological app",
     languages: ["Typescript"],
@@ -24,21 +92,6 @@ const projects: Array<Project> = [
     year: 2024,
     repo: "https://github.com/kipyegonline/agroecology-app",
     link: "https://agroecology-app.vercel.app/",
-    openSource: false,
-  },
-  {
-    id: 1,
-    name: "Image Reader Artificial Intelligence app",
-    languages: ["Typescript"],
-    frameworks: ["React", "typescript", "Tailwind", "AI"],
-    short_des:
-      "A generative AI image to text app that reads and interprets  images using Google Gemini AI",
-    long_des: `An Artificial Intelligence web app powered by Google Gemini API to read and interpret images to text using multi modal models.
-
-The app can also compare upto 2 images and return the comparison in text format.`,
-    year: 2024,
-    repo: "https://github.com/kipyegonline/gemini-ai-api",
-    link: "https://image-reader-357a1.web.app/",
     openSource: false,
   },
   {

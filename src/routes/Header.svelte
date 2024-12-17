@@ -16,12 +16,18 @@
   ];
   let roles = ["Software developer", "Freelance Journalist"];
   let dm = false;
+  let rotate = false;
+  setTimeout(() => (rotate = true), 5000);
 </script>
 
 <header class="overflow-y-scroll">
   <Contact open={dm} closeModal={() => (dm = false)} />
   <div>
-    <Image src="/vince_profile.jpg" class="w-full h-auto" alt="my pic" />
+    <Image
+      src="/vince_profile.jpg"
+      class={`w-full h-auto transform ${!rotate ? "-rotate-12" : "rotate-0"}`}
+      alt="my pic"
+    />
   </div>
   <div class="p-4 text-xl font-medium flex flex-col items-start">
     <p class="hidden">Vincent Kipyegon</p>
@@ -60,8 +66,10 @@
   <div class="mb-2">
     <p class="text-center font-bold text-underline">Skills</p>
     <div class="p-4">
-      <code>Javascript/Typescript, HTML, CSS</code>
-      <code> React,React Native,Angular,Svelte </code>
+      <code>Javascript/Typescript, HTML, CSS, PHP, MYSQL</code>
+      <code class="mt-3 pt-2">
+        React,React Native,Angular,Svelte, <br />Laravel, Remix js
+      </code>
     </div>
     <hr class="mb-2" />
     <p class="text-center font-bold text-underline">Other Skills</p>
