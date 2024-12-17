@@ -20,14 +20,14 @@
   let skills = [
     " HTML5, CSS3, JavaScript (ES6+), Typescript",
     " React, React Native, Angular,Next JS, Svelte,Redwood js,Svelte Kit",
-    "Generative AI tools (Claude AI,Google bard,Chat GPT)",
+    "Generative AI tools (Claude AI,Google Gemini,Chat GPT)",
     " PHP/MYSQL/Laravel",
     " Tailwind CSS,Material UI,Bootstrap, Ant design",
     " Responsive/mobile web design & Accessible web design",
     " Cross-browser compatibility ",
 
     " Git, GitHub, CI/CD tools, Github actions",
-    " AWS - Dyynamo DB, Cognito, Amplify & Elastic Beanstalk",
+    " AWS - Dynamo DB, Cognito, AWS Lambda, Amplify & Elastic Beanstalk",
   ];
 
   let logoClicked = false,
@@ -76,7 +76,7 @@
 <section class="dark:bg-black dark:text-white w-full">
   <div class="py-2 mb-2">
     <h1
-      class={` hidden sm:block  bg-blue-600 text-white rounded-md mb-2 text-4xl py-2 `}
+      class={` hidden sm:block  bg-anotherBlue text-white rounded-md mb-2 text-4xl py-2 `}
     >
       Vincent Kipyegon Koech
     </h1>

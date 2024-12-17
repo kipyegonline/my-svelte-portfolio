@@ -66,7 +66,9 @@
   on:close={handleClose}
 >
   <form on:submit|preventDefault={handleSubmit}>
-    <p class=" mb-2 text-center py-2 text-2xl font-medium">Contact Vincent,</p>
+    <p class=" mb-2 text-center py-2 text-2xl font-medium">
+      Contact Vincent Kipyegon,
+    </p>
     <div class="flex flex-col gap-1 mb-3 rounded-sm">
       <label for="name">Enter name:</label>
       <input
@@ -105,7 +107,7 @@
     <button
       disabled={loading}
       type="submit"
-      class="p-2 bg-blue-600 text-white w-full rounded-lg"
+      class="p-2 bg-anotherBlue text-white w-full rounded-lg"
       >{loading ? "Submitting" : "Submit"}
     </button>
 
